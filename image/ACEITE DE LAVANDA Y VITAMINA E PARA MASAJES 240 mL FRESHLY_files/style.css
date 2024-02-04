@@ -1,0 +1,33 @@
+/*
+ Theme Name:   Woodmart Child
+ Description:  Woodmart Child Theme
+ Author:       XTemos
+ Author URI:   http://xtemos.com
+ Template:     woodmart
+ Version:      1.0.0
+ Text Domain:  woodmart
+*/
+
+
+
+/*Color y tamaño letra PUM*/
+.mcmp_recalc_price_row {
+    color: #009275 !important;
+    font-size: 10px !important;
+}
+
+
+/*esconder quick shop - opcion 3*/
+.woodmart-hover-quick .quick-shop-btn {
+    display: none;
+}
+
+/*esconder quick shop - mobiles*/
+.wd-hover-base .wd-bottom-actions.wd-add-small-btn .wd-add-btn {
+    display: none;
+}
+
+/*esconder quick shop - inicio carousel*/
+.wd-action-btn.wd-style-icon .button {
+    display: none;
+}
