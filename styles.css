@@ -87,10 +87,26 @@ nav {
     min-height: 80vh;
 }
 
-.saludo {
-    margin-top: 30vh;
+.contenedor_imagen {
+    margin-top: 20vh;
     margin-left: 100px;
-    width: 40%;
+    width: 45%;
+    margin-right: auto;
+    display: block;
+}
+
+.cliente_feliz {
+    width: 100%;
+}
+
+.mision {
+    margin: auto;
+}
+
+.saludo {
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .saludo p {
@@ -123,8 +139,8 @@ nav {
     height: 100%;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin-left: 18vh;
+    background: none
 }
 
 /*Footer*/
@@ -199,6 +215,7 @@ footer .siguenos {
 
 strong {
     color: var(--orange);
+    font-size: 20px;
 }
 
 /*Login*/
@@ -270,21 +287,30 @@ strong {
     margin-bottom: 30px;
 }
 
+.login-button:hover {
+    background-color: var(--black);
+    color: var(--orange);
+}
+
 /*Productos*/
 .container-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
 }
 
 .items {
     border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
 }
 
 .items:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.90);
 }
 
 .items figure {
@@ -299,7 +325,7 @@ strong {
 }
 
 .items:hover img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: var(--white);
 }
 
@@ -346,3 +372,323 @@ strong {
     margin-bottom: 30px;
     margin-left: 20px;
 }
+
+/*Menú mobile*/
+.inactive {
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 60px;
+    background-color: var(--white);
+    padding: 20px;
+    left: 0;
+    width: 75vw;
+    border-radius: 10px;
+    margin-left: 5px;
+    border: 1px solid var(--gray);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--darkGray);
+    font-weight: bold;
+}
+
+.mobile-menu a:hover {
+    color: var(--orange);
+}
+
+.mobile-menu ul {
+    margin: 24px 0 0;
+    list-style: none;
+    padding: 5px;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 12px;
+}
+
+/*Responsive movil*/
+@media (max-width: 400px) {
+    .menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .foto_presentacion {
+        position: relative;
+    }
+    
+    .navbar-right {
+        display: none;
+    }
+
+    .contenedor_principal {
+        display:inline-block;
+        min-height: 80vh;
+        width: 100%;
+        padding: 0;
+    }
+
+    .saludo {
+        width: 100%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contenedor_imagen {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .saludo p {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    main button {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .foto_entrada {
+        background-color: var(--darkGray);
+        width: 100%;
+    }
+
+    .foto_presentacion {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .cliente_feliz {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .mision {
+        margin: 10px 50px 50px 50px;
+        font-size: 16px;
+    }
+
+    .mision strong {
+        font-size: 16px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        height: 60vh;
+    }
+
+    .contacto,
+    .copyright,
+    .siguenos p {
+        margin-top: 20px;
+    }
+
+    .telefonos p {
+        font-size: 14px;
+    }
+
+    .siguenos {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .form_container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .questions-container {
+        margin: 50px 20px;
+    }
+
+    .questions-container p {
+        font-size: 14px;
+    }
+
+    .container-items {
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+/*Responsive pantalla mediana*/
+
+@media screen and (max-width: 850px) and (min-width: 401px) {
+    .menu {
+        display: flex;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .contenedor_principal {
+        display: block;
+    }
+
+    .mobile-menu {
+        max-width: 40vh;
+    }
+
+    .saludo {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .saludo p {
+        font-size: 24px;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    main button {
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .foto_entrada {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .foto_presentacion {
+        display: block;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cliente_feliz {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .contenedor_imagen {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        width: 50%;
+    }
+
+    .mision {
+        margin: 25px 50px 50px 50px;
+    }
+
+    .questions-container {
+        margin: 50px 20px;
+    }
+
+    .container-items {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        height: 60vh;
+    }
+
+    .contacto,
+    .copyright,
+    .siguenos p {
+        margin-top: 20px;
+    }
+
+    .contacto {
+        margin-bottom: 25px;
+    }
+
+    .telefonos p {
+        font-size: 14px;
+    }
+
+    .siguenos {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 851px) {
+    .contenedor_imagen {
+        width: 40%;
+        display: block;
+        margin: auto;
+        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto_presentacion {
+        margin-left: 0;
+    }
+
+    .cliente_feliz {
+        width: 100%;
+    }
+
+    .mision {
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .questions-container {
+        margin: 50px 20px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1051px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+ 
