@@ -130,14 +130,6 @@ nav {
 #carousel .overlay p {
     font-size: 18px;
 }
-   
-.cliente_feliz {
-    width: 100%;
-}
-
-.mision {
-    margin: auto;
-}
 
 .saludo {
     margin: auto;
@@ -500,15 +492,20 @@ strong {
         display: block;
     }
 
-    .foto_entrada {
-        background-color: var(--darkGray);
-        width: 100%;
-    }
 
     .foto_presentacion {
         display: block;
         width: 100%;
         margin-left: 0;
+    }
+
+
+    .contenedor_imagen {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
 
     .cliente_feliz {
@@ -522,7 +519,11 @@ strong {
     }
 
     .mision {
-        margin: 10px 50px 50px 50px;
+        margin: 10px 30px 50px 30px;
+        font-size: 16px;
+    }
+
+    .mision p {
         font-size: 16px;
     }
 
@@ -649,6 +650,10 @@ strong {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .mision p {
+        font-size: 18px;
     }
 
     .cliente_feliz {
