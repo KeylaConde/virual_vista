@@ -53,4 +53,41 @@ header {
     border-radius: 8px;
     margin-right: 12px; }
 
+main #carousel {
+  position: relative; }
+  main #carousel div .carousel-inner {
+    height: 90vh; }
+    main #carousel div .carousel-inner .carousel-item img {
+      object-fit: cover; }
+    main #carousel div .carousel-inner .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff; }
+      main #carousel div .carousel-inner .overlay .container .row div div p {
+        font-size: 18px; }
+      main #carousel div .carousel-inner .overlay .container .row div div .entrar {
+        font-size: 20px;
+        padding: 5px 15px;
+        background-color: #F67804;
+        border: 1px solid #F67804;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 900; }
+        main #carousel div .carousel-inner .overlay .container .row div div .entrar:hover {
+          background-color: #ffffff;
+          color: #F67804;
+          border: 1px solid #F67804;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9); }
+      main #carousel div .carousel-inner .overlay .container .row div div #loadingMessage {
+        margin-top: 10px;
+        display: none; }
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%; }
+
 /*# sourceMappingURL=style.css.map */

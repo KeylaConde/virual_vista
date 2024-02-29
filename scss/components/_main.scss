@@ -1,0 +1,103 @@
+@import '../base/variables';
+
+main {
+
+    #carousel {
+        position: relative;
+        div {
+            
+            .carousel-indicators {
+
+                button {
+
+                }
+                button {
+
+                }
+                button {
+
+                }
+            }
+            .carousel-inner {
+                height: 90vh;
+
+                .carousel-item {
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+                .carousel-item {
+                    
+                    img {
+
+                    }
+                }
+                .carousel-item {
+                    
+                    img {
+
+                    }
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: $white;
+
+                    .container {
+
+                        .row {
+
+                            div {
+
+                                div {
+
+                                    h1 {
+
+                                    }
+                                    p {
+                                        font-size: 18px;
+                                        
+                                    }
+                                    .entrar {
+                                        font-size: 20px;
+                                        padding: 5px 15px;
+                                        background-color: $orange;
+                                        border: 1px solid $orange;
+                                        border-radius: 10px;
+                                        cursor: pointer;
+                                        font-weight: 900;
+
+                                        &:hover {
+                                            background-color: $white;
+                                            color: $orange;
+                                            border: 1px solid $orange;
+                                            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
+                                        }
+
+                                    }
+
+                                    #loadingMessage {
+                                        margin-top: 10px;
+                                        display: none;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#carousel .overlay .container, 
+#carousel .overlay .row {
+    height: 100%;
+}
