@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 header {
     background: transparent;
     .head {
@@ -6,14 +8,18 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 0 24px;
-        border-bottom: 1px solid var(--gray);
+        border-bottom: 1px solid $gray;
+
         .menu {
             display: none;
             }
+
             .navbar-left {
                 display: flex;
                 position: relative;
+
                 a {
+
                     .logo_virtual_vista_orange {
                         width: 40px;
                         height: 40px;
@@ -23,21 +29,47 @@ header {
                         cursor: pointer;
                     }
                 }
-            .navbar-right {
-                ul {
-                    li {
-                        a {
+        }
+        .navbar-right {
+            position: relative;
+            cursor: pointer;
 
-                        }
-                    }
-                    .navbar-shopping-cart {
-                        img {
+            ul {
+                margin-left: 12px;
+                li {
 
+                    a {
+
+                        &:hover {
+                            color: $orange;
+                            font-weight: 500;
                         }
                     }
                 }
+                .navbar-shopping-cart {
+                    position: relative;
+                    img {
 
+                    }
+                }
             }
+
         }
     }
+    .navbar-left ul,
+    .navbar-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar-left ul li a,
+.navbar-right ul li a {
+    text-decoration: none;
+    color: $gray;
+    padding: 8px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
 }
