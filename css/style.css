@@ -90,4 +90,38 @@ main #carousel {
 #carousel .overlay .row {
   height: 100%; }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  background-color: #000000; }
+  footer .contacto {
+    display: block;
+    margin-top: 5vh; }
+    footer .contacto .telefonos {
+      margin-top: 15px; }
+      footer .contacto .telefonos p {
+        margin-bottom: 4px; }
+  footer .copyright {
+    margin-top: 17vh; }
+  footer .siguenos {
+    display: block;
+    margin-top: 5vh; }
+    footer .siguenos div i {
+      margin-right: 4px;
+      margin-left: 4px;
+      cursor: pointer;
+      margin-top: 35px; }
+      footer .siguenos div i:hover {
+        color: #F67804; }
+
+footer div {
+  margin: auto;
+  color: #ffffff; }
+
+footer div p {
+  color: #c7c7c7;
+  text-decoration: none;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */

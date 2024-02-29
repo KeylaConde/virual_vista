@@ -1,0 +1,73 @@
+@import '../base/variables';
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    background-color: $black;
+
+    .contacto {
+        display: block;
+        margin-top: 5vh;
+
+        div {
+
+            p {
+
+
+            }
+        }
+        .telefonos {
+            margin-top: 15px;
+
+            p {
+                margin-bottom: 4px;
+
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 17vh;
+
+    }
+
+    .siguenos {
+        display: block;
+        margin-top: 5vh;
+
+        div {
+
+            p {
+
+
+            }
+        }
+
+        div {
+
+            i {
+                margin-right: 4px;
+                margin-left: 4px;
+                cursor: pointer;
+                margin-top: 35px;
+
+                &:hover {
+                    color: $orange;
+                }
+
+            }
+        }
+    }
+}
+
+footer div {
+    margin: auto;
+    color: $white;
+}
+
+footer div p {
+    color: $gray;
+    text-decoration: none;
+    margin-right: 10px;
+}
