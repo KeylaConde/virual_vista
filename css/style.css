@@ -90,6 +90,57 @@ main #carousel {
 #carousel .overlay .row {
   height: 100%; }
 
+/* Estilos About Us*/
+.contenedor_about_us .contenedor_principal {
+  display: flex;
+  min-height: 80vh; }
+  .contenedor_about_us .contenedor_principal .contenedor_imagen {
+    margin-top: 20vh;
+    margin-left: 100px;
+    width: 45%;
+    margin-right: auto;
+    display: block; }
+    .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+      width: 100%; }
+  .contenedor_about_us .contenedor_principal .mision {
+    margin-top: 20vh;
+    margin-right: 10vh;
+    margin-left: 20vh;
+    font-size: 20px;
+    text-align: justify; }
+    .contenedor_about_us .contenedor_principal .mision p .nuestra_mision {
+      color: #F67804;
+      margin-bottom: 10px; }
+.contenedor_about_us strong {
+  color: #F67804;
+  font-size: 20px; }
+
+/* Estilos Registro*/
+/* Estilos About Us*/
+.contenedor_about_us .contenedor_principal {
+  display: flex;
+  min-height: 80vh; }
+  .contenedor_about_us .contenedor_principal .contenedor_imagen {
+    margin-top: 20vh;
+    margin-left: 100px;
+    width: 45%;
+    margin-right: auto;
+    display: block; }
+    .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+      width: 100%; }
+  .contenedor_about_us .contenedor_principal .mision {
+    margin-top: 20vh;
+    margin-right: 10vh;
+    margin-left: 20vh;
+    font-size: 20px;
+    text-align: justify; }
+    .contenedor_about_us .contenedor_principal .mision p .nuestra_mision {
+      color: #F67804;
+      margin-bottom: 10px; }
+.contenedor_about_us strong {
+  color: #F67804;
+  font-size: 20px; }
+
 footer {
   display: flex;
   justify-content: space-between;

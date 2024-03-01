@@ -1,0 +1,48 @@
+/* Estilos About Us*/
+
+.contenedor_about_us {
+
+    .contenedor_principal {
+        display: flex;
+        min-height: 80vh;
+
+        .contenedor_imagen {
+            margin-top: 20vh;
+            margin-left: 100px;
+            width: 45%;
+            margin-right: auto;
+            display: block;
+
+            .cliente_feliz {
+                width: 100%;
+            }
+
+                    }
+
+                    .mision {
+                        margin-top: 20vh;
+                        margin-right: 10vh;
+                        margin-left: 20vh;
+                        font-size: 20px;
+                        text-align: justify;
+                        
+                        p {
+        
+                            .nuestra_mision {
+                                color: $orange;
+                                margin-bottom: 10px;
+        
+                                p {
+        
+        
+                                }
+                }
+            }
+        }
+    }
+    strong {
+        color: $orange;
+        font-size: 20px;
+    }
+    
+} 
