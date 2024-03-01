@@ -1,0 +1,85 @@
+/* Estilos Registro*/
+@import '../base/variables';
+
+.contenedor_formulario {
+
+    .contenedor_principal {
+        display: flex;
+        min-height: 80vh;
+
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+
+            .form_container {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                width: 300px;
+
+                .title-registre {
+                    color: $orange;
+                    font-size: 24px;
+                    text-align: start;
+                    margin-bottom: 20px;
+
+                }
+                .form {
+                    display: flex;
+                    flex-direction: column;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        .label {
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin-bottom: 8px;
+                        }
+                        input {
+                            background-color: $gray;
+                            border: none;
+                            border-radius: 8px;
+                            height: 30px;
+                            font-size: 16px;
+                            padding: 6px;
+                            margin-bottom: 12px;
+
+                        }
+
+                        .input-name,
+                        .input-email,
+                        .input-password {
+                            margin-bottom: 22px;
+                        }
+                    }
+                    .primary-button {
+                        background-color: $orange;
+                        border-radius: 8px;
+                        border: none;
+                        color: $black;
+                        width: 100%;
+                        cursor: pointer;
+                        font-size: 18px;
+                        font-weight: bold;
+                        height: 50px;
+
+                    }
+                    .login-button {
+                        margin-top: 14px;
+                        margin-bottom: 30px;
+
+                        &:hover {
+                            background-color: $black;
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
