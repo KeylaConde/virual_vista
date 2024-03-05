@@ -17,6 +17,7 @@ main {
             .carousel-inner {
                 height: 90vh;
 
+                /*Responsive movil*/
                 @media (max-width: 400px) {
                     height: 100%;
                 }
@@ -26,6 +27,7 @@ main {
                     img {
                         object-fit: cover;
 
+                        /*Responsive movil*/
                         @media (max-width: 400px) {
                             height: 70vh;
                             object-fit: cover;
@@ -74,6 +76,7 @@ main {
                                             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
                                         } 
 
+                                        /*Responsive movil*/
                                         @media (max-width: 400px) {
                                             justify-content: center;
                                             align-items: center;

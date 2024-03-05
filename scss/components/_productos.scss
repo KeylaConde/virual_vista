@@ -14,6 +14,17 @@
         margin-left: auto;
         width: 90%;
 
+        /*Responsive movil*/
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(1, 1fr);
+            width: 70%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 30px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
         .items {
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
