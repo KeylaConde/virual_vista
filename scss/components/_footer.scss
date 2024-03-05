@@ -6,9 +6,26 @@ footer {
     height: 30vh;
     background-color: $black;
 
+    /*Responsive movil*/
+    @media (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        height: 60vh;
+        margin-top: 0;
+    }
+
     .contacto {
         display: block;
         margin-top: 5vh;
+
+        /*Responsive movil*/
+        @media (max-width: 400px) {
+            margin-bottom: 30px;
+            padding-top: 50px;
+        }
 
         div {
 
@@ -23,6 +40,11 @@ footer {
             p {
                 margin-bottom: 4px;
 
+                /*Responsive movil*/
+                @media (max-width: 400px) {
+                    font-size: 14px;
+                }
+
             }
         }
     }
@@ -30,11 +52,25 @@ footer {
     .copyright {
         margin-top: 17vh;
 
+        /*Responsive movil*/
+        @media (max-width: 400px) {
+            margin-bottom: 30px;
+            padding-top: 25px;
+
+        }
+
     }
 
     .siguenos {
         display: block;
         margin-top: 5vh;
+
+        /*Responsive movil*/
+        @media (max-width: 400px) {
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+
+        }
 
         div {
 
@@ -58,6 +94,14 @@ footer {
 
             }
         }
+    }
+
+    .contacto,
+    .copyright,
+    .siguenos p {
+        @media (max-width: 400px) {
+            margin-top: -20px;
+        }        
     }
 }
 

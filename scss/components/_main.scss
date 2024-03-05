@@ -4,6 +4,7 @@ main {
 
     #carousel {
         position: relative;
+
         div {
             
             .carousel-indicators {
@@ -16,10 +17,19 @@ main {
             .carousel-inner {
                 height: 90vh;
 
+                @media (max-width: 400px) {
+                    height: 100%;
+                }
+
                 .carousel-item {
 
                     img {
                         object-fit: cover;
+
+                        @media (max-width: 400px) {
+                            height: 70vh;
+                            object-fit: cover;
+                        }
                     }
                 }
 
@@ -41,6 +51,7 @@ main {
                                 div {
 
                                     h1 {
+                                        font-weight: bolder;
 
                                     }
                                     p {
@@ -61,6 +72,14 @@ main {
                                             color: $orange;
                                             border: 1px solid $orange;
                                             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9);
+                                        } 
+
+                                        @media (max-width: 400px) {
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            display: block;
                                         }
 
                                     }

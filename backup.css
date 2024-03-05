@@ -419,7 +419,7 @@ strong {
     background-color: var(--white);
     padding: 20px;
     left: 0;
-    width: 75vw;
+    width: 75vh;
     border-radius: 10px;
     margin-left: 5px;
     border: 1px solid var(--gray);

@@ -12,9 +12,11 @@
     display: none;
 }
 
-@import './components/header';
+@import './components/header.scss';
+@import './components/mobile-menu';
 @import './components/main';
 @import './components/about_us.scss';
 @import './components/registro';
+@import './components/productos';
 @import './components/preguntas';
 @import './components/footer';

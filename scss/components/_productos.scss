@@ -1,0 +1,78 @@
+@import '../base/variables';
+
+/*Estilos Productos*/
+
+.contenedor_productos {
+
+    .container-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+
+        .items {
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
+            
+            &:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.90);
+            }
+
+            figure {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    transition: all .5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: $white;
+
+                    }
+
+                }
+            }
+            .info-product {
+                padding: 15px 30px;
+                line-height: 1.5;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h4 {
+                    color: $darkGray;
+                }
+                .price {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $darkGray;
+
+                }
+                button {
+                    border: none;
+                    background: none;
+                    background-color: $orange;
+                    color: $black;
+                    font-weight: bolder;
+                    padding: 15px 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        transition: all .3s;
+                        background-color: $darkOrange;
+                        color: $white;
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -12,8 +12,14 @@ header {
 
         .menu {
             display: none;
-            }
 
+            /*Responsive movil*/
+            @media (max-width: 400px) {
+                display: flex;
+                cursor: pointer;
+                width: 30px;
+            }
+        }
             .navbar-left {
                 display: flex;
                 position: relative;
@@ -29,10 +35,18 @@ header {
                         cursor: pointer;
                     }
                 }
-        }
+
+            }
+
+        
         .navbar-right {
             position: relative;
             cursor: pointer;
+
+                    /*Responsive movil*/
+                    @media (max-width: 400px) {
+                        display: none;
+                    }
 
             ul {
                 margin-left: 12px;
@@ -53,6 +67,8 @@ header {
                     }
                 }
             }
+
+
 
         }
     }

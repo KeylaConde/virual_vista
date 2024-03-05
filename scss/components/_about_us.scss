@@ -3,8 +3,10 @@
 .contenedor_about_us {
 
     .contenedor_principal {
-        display: flex;
-        min-height: 80vh;
+        display:inline-block;
+        min-height: 70vh;
+        width: 100%;
+        padding: 0;
 
         .contenedor_imagen {
             margin-top: 20vh;
@@ -13,8 +15,30 @@
             margin-right: auto;
             display: block;
 
+            /*Responsive movil*/
+            @media (max-width: 400px) {
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+
             .cliente_feliz {
                 width: 100%;
+
+                /*Responsive movil*/
+                @media (max-width: 400px) {
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 80%;
+                    margin-bottom: 30px;
+                }
+
+
             }
 
                     }
@@ -25,8 +49,18 @@
                         margin-left: 20vh;
                         font-size: 20px;
                         text-align: justify;
+
+                        @media (max-width: 400px) {
+                            margin: 10px 30px 50px 30px;
+                            font-size: 16px;
+
+                        }
                         
                         p {
+                            @media (max-width: 400px) {
+                                font-size: 16px;
+
+                            }
         
                             .nuestra_mision {
                                 color: $orange;
@@ -43,6 +77,10 @@
     strong {
         color: $orange;
         font-size: 20px;
+
+        @media (max-width: 400px) {
+            font-size: 16px;
+        }
     }
     
 } 
