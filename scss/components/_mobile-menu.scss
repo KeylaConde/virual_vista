@@ -14,6 +14,20 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 
+    /*Responsive pantalla mediana*/
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+        max-width: 40vh;
+    }
+
+    /* pantalla grande */
+    @media screen and (max-width: 1050px) and (min-width: 851px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1051px) {
+            display: none;
+        }
+
     ul {
         margin: 24px 0 0;
         list-style: none;

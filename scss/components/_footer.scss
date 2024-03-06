@@ -3,7 +3,7 @@
 footer {
     display: flex;
     justify-content: space-between;
-    height: 30vh;
+    height: 35vh;
     background-color: $black;
 
     /*Responsive movil*/
@@ -17,6 +17,16 @@ footer {
         margin-top: 0;
     }
 
+    /*Responsive pantalla mediana*/
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        height: 60vh;
+    }
+
     .contacto {
         display: block;
         margin-top: 5vh;
@@ -27,10 +37,16 @@ footer {
             padding-top: 50px;
         }
 
+        /*Responsive pantalla mediana*/
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+            margin-bottom: 25px;
+            padding-top: 5vh;
+                    }
+
         div {
 
             p {
-
+                padding-bottom: 10px;
 
             }
         }
@@ -38,11 +54,17 @@ footer {
             margin-top: 15px;
 
             p {
-                margin-bottom: 4px;
+                margin-bottom: 2px;
 
                 /*Responsive movil*/
                 @media (max-width: 400px) {
                     font-size: 14px;
+                }
+
+                /*Responsive pantalla mediana*/
+                @media screen and (max-width: 850px) and (min-width: 401px) {
+                    font-size: 14px;
+                    padding-bottom: 2px;
                 }
 
             }
@@ -59,6 +81,12 @@ footer {
 
         }
 
+        /*Responsive pantalla mediana*/
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+
     }
 
     .siguenos {
@@ -70,6 +98,12 @@ footer {
             margin-bottom: 50px;
             padding-bottom: 50px;
 
+        }
+
+        /*Responsive pantalla mediana*/
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+            margin-bottom: 50px;
+            padding-bottom: 50px;
         }
 
         div {
@@ -99,9 +133,15 @@ footer {
     .contacto,
     .copyright,
     .siguenos p {
+        /*Responsive movil*/
         @media (max-width: 400px) {
             margin-top: -20px;
-        }        
+        }     
+        
+        /*Responsive pantalla mediana*/
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+        margin-top: -20px;
+        }
     }
 }
 

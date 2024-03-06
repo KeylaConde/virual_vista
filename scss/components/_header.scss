@@ -19,6 +19,13 @@ header {
                 cursor: pointer;
                 width: 30px;
             }
+
+            /*Responsive pantalla mediana*/
+            @media screen and (max-width: 850px) and (min-width: 401px) {
+                display: flex;
+                width: 30px;
+
+            } 
         }
             .navbar-left {
                 display: flex;
@@ -45,6 +52,11 @@ header {
 
                     /*Responsive movil*/
                     @media (max-width: 400px) {
+                        display: none;
+                    }
+
+                    /*Responsive pantalla mediana*/
+                    @media screen and (max-width: 850px) and (min-width: 401px) {
                         display: none;
                     }
 

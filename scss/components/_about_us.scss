@@ -1,3 +1,4 @@
+@import '../base/variables';
 /* Estilos About Us*/
 
 .contenedor_about_us {
@@ -7,6 +8,11 @@
         min-height: 70vh;
         width: 100%;
         padding: 0;
+
+        /* pantalla grande */
+        @media screen and (max-width: 1050px) and (min-width: 851px) {
+            display: block;
+        }
 
         .contenedor_imagen {
             margin-top: 20vh;
@@ -24,6 +30,24 @@
                 margin-top: 30px;
             }
 
+            /*Responsive pantalla mediana*/
+            @media screen and (max-width: 850px) and (min-width: 401px) {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 25px;
+                width: 50%;
+            }
+
+            /* pantalla grande */
+            @media screen and (max-width: 1050px) and (min-width: 851px) {
+                width: 35%;
+                display: block;
+                margin: auto;
+                padding-left: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
             .cliente_feliz {
                 width: 100%;
 
@@ -38,6 +62,21 @@
                     margin-bottom: 30px;
                 }
 
+                /*Responsive pantalla mediana*/
+                @media screen and (max-width: 850px) and (min-width: 401px) {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                }
+
+                /* pantalla grande */
+                @media screen and (max-width: 1050px) and (min-width: 851px) {
+                    width: 100%;
+                    margin-top: 10vh;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
 
             }
 
@@ -50,17 +89,38 @@
                         font-size: 20px;
                         text-align: justify;
 
+                        /*Responsive movil*/
                         @media (max-width: 400px) {
                             margin: 10px 30px 50px 30px;
                             font-size: 16px;
 
                         }
+
+                        /*Responsive pantalla mediana*/
+                        @media screen and (max-width: 850px) and (min-width: 401px) {
+                            margin: 25px 50px 50px 50px;
+                        }
+
+                        /* pantalla grande */
+                        @media screen and (max-width: 1050px) and (min-width: 851px) {
+                            width: 75%;
+                            margin-top: 50px;
+                            margin-bottom: 50px;
+                        }
                         
                         p {
+                            /*Responsive movil*/
                             @media (max-width: 400px) {
                                 font-size: 16px;
 
                             }
+
+                            /*Responsive pantalla mediana*/
+                            @media screen and (max-width: 850px) and (min-width: 401px) {
+                            font-size: 18px;
+                            }
+
+                        }
         
                             .nuestra_mision {
                                 color: $orange;
@@ -70,10 +130,11 @@
         
         
                                 }
-                }
-            }
-        }
-    }
+                            }
+                    }
+    }             
+
+
     strong {
         color: $orange;
         font-size: 20px;

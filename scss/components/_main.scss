@@ -2,6 +2,11 @@
 
 main {
 
+    /*Responsive pantalla mediana*/
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+        display: block;
+    }
+
     #carousel {
         position: relative;
 
@@ -22,6 +27,11 @@ main {
                     height: 100%;
                 }
 
+                /*Responsive pantalla mediana*/
+                @media screen and (max-width: 850px) and (min-width: 401px) {
+                    height: 70vh;
+                }
+
                 .carousel-item {
 
                     img {
@@ -31,6 +41,12 @@ main {
                         @media (max-width: 400px) {
                             height: 70vh;
                             object-fit: cover;
+                        }
+
+                        /*Responsive pantalla mediana*/
+                        @media screen and (max-width: 850px) and (min-width: 401px) {
+                            height: 70vh;
+
                         }
                     }
                 }
@@ -55,9 +71,22 @@ main {
                                     h1 {
                                         font-weight: bolder;
 
+                                        /*Responsive pantalla mediana*/
+                                        @media screen and (max-width: 850px) and (min-width: 401px) {
+                                            font-weight: bolder;
+                                            margin-bottom: 15px;
+                                            margin-right: 20px;
+                                        }
+
                                     }
                                     p {
                                         font-size: 18px;
+
+                                        /*Responsive pantalla mediana*/
+                                        @media screen and (max-width: 850px) and (min-width: 401px) {
+                                            margin-left: 20px;
+                                            margin-right: 20px;
+                                        }
                                         
                                     }
                                     .entrar {
@@ -78,6 +107,15 @@ main {
 
                                         /*Responsive movil*/
                                         @media (max-width: 400px) {
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-left: auto;
+                                            margin-right: auto;
+                                            display: block;
+                                        }
+
+                                        /*Responsive pantalla mediana*/
+                                        @media screen and (max-width: 850px) and (min-width: 401px) {
                                             justify-content: center;
                                             align-items: center;
                                             margin-left: auto;

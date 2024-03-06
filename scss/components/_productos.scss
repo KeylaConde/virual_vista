@@ -16,10 +16,19 @@
 
         /*Responsive movil*/
         @media (max-width: 400px) {
-            grid-template-columns: repeat(1, 1fr);
-            width: 70%;
-            margin-right: auto;
-            margin-left: auto;
+                    grid-template-columns: repeat(1, 1fr);
+                     width: 70%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+
+        /*Responsive pantalla mediana*/
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+            grid-template-columns: repeat(2, 1fr);
+            width: 90%;
             margin-top: 30px;
             height: auto;
             margin-bottom: 30px;

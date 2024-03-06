@@ -19,11 +19,16 @@ header {
     border-bottom: 1px solid #c7c7c7; }
     header .head .menu {
       display: none;
-      /*Responsive movil*/ }
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/ }
       @media (max-width: 400px) {
         header .head .menu {
           display: flex;
           cursor: pointer;
+          width: 30px; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        header .head .menu {
+          display: flex;
           width: 30px; } }
     header .head .navbar-left {
       display: flex;
@@ -38,8 +43,12 @@ header {
     header .head .navbar-right {
       position: relative;
       cursor: pointer;
-      /*Responsive movil*/ }
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/ }
       @media (max-width: 400px) {
+        header .head .navbar-right {
+          display: none; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
         header .head .navbar-right {
           display: none; } }
       header .head .navbar-right ul {
@@ -75,7 +84,18 @@ header {
   margin-left: 5px;
   border: 1px solid #c7c7c7;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  z-index: 1000; }
+  z-index: 1000;
+  /*Responsive pantalla mediana*/
+  /* pantalla grande */ }
+  @media screen and (max-width: 850px) and (min-width: 401px) {
+    .mobile-menu {
+      max-width: 40vh; } }
+  @media screen and (max-width: 1050px) and (min-width: 851px) {
+    .mobile-menu {
+      display: none; } }
+  @media screen and (min-width: 1051px) {
+    .mobile-menu {
+      display: none; } }
   .mobile-menu ul {
     margin: 24px 0 0;
     list-style: none;
@@ -90,57 +110,89 @@ header {
         .mobile-menu ul li a:hover {
           color: #F67804; }
 
-main #carousel {
-  position: relative; }
-  main #carousel div .carousel-inner {
-    height: 90vh;
-    /*Responsive movil*/ }
-    @media (max-width: 400px) {
-      main #carousel div .carousel-inner {
-        height: 100%; } }
-    main #carousel div .carousel-inner .carousel-item img {
-      object-fit: cover;
-      /*Responsive movil*/ }
+main {
+  /*Responsive pantalla mediana*/ }
+  @media screen and (max-width: 850px) and (min-width: 401px) {
+    main {
+      display: block; } }
+  main #carousel {
+    position: relative; }
+    main #carousel div .carousel-inner {
+      height: 90vh;
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/ }
       @media (max-width: 400px) {
-        main #carousel div .carousel-inner .carousel-item img {
-          height: 70vh;
-          object-fit: cover; } }
-    main #carousel div .carousel-inner .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #ffffff; }
-      main #carousel div .carousel-inner .overlay .container .row div div h1 {
-        font-weight: bolder; }
-      main #carousel div .carousel-inner .overlay .container .row div div p {
-        font-size: 18px; }
-      main #carousel div .carousel-inner .overlay .container .row div div .entrar {
-        font-size: 20px;
-        padding: 5px 15px;
-        background-color: #F67804;
-        border: 1px solid #F67804;
-        border-radius: 10px;
-        cursor: pointer;
-        font-weight: 900;
-        /*Responsive movil*/ }
-        main #carousel div .carousel-inner .overlay .container .row div div .entrar:hover {
-          background-color: #ffffff;
-          color: #F67804;
-          border: 1px solid #F67804;
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9); }
+        main #carousel div .carousel-inner {
+          height: 100%; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        main #carousel div .carousel-inner {
+          height: 70vh; } }
+      main #carousel div .carousel-inner .carousel-item img {
+        object-fit: cover;
+        /*Responsive movil*/
+        /*Responsive pantalla mediana*/ }
         @media (max-width: 400px) {
-          main #carousel div .carousel-inner .overlay .container .row div div .entrar {
-            justify-content: center;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            display: block; } }
-      main #carousel div .carousel-inner .overlay .container .row div div #loadingMessage {
-        margin-top: 10px;
-        display: none; }
+          main #carousel div .carousel-inner .carousel-item img {
+            height: 70vh;
+            object-fit: cover; } }
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+          main #carousel div .carousel-inner .carousel-item img {
+            height: 70vh; } }
+      main #carousel div .carousel-inner .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff; }
+        main #carousel div .carousel-inner .overlay .container .row div div h1 {
+          font-weight: bolder;
+          /*Responsive pantalla mediana*/ }
+          @media screen and (max-width: 850px) and (min-width: 401px) {
+            main #carousel div .carousel-inner .overlay .container .row div div h1 {
+              font-weight: bolder;
+              margin-bottom: 15px;
+              margin-right: 20px; } }
+        main #carousel div .carousel-inner .overlay .container .row div div p {
+          font-size: 18px;
+          /*Responsive pantalla mediana*/ }
+          @media screen and (max-width: 850px) and (min-width: 401px) {
+            main #carousel div .carousel-inner .overlay .container .row div div p {
+              margin-left: 20px;
+              margin-right: 20px; } }
+        main #carousel div .carousel-inner .overlay .container .row div div .entrar {
+          font-size: 20px;
+          padding: 5px 15px;
+          background-color: #F67804;
+          border: 1px solid #F67804;
+          border-radius: 10px;
+          cursor: pointer;
+          font-weight: 900;
+          /*Responsive movil*/
+          /*Responsive pantalla mediana*/ }
+          main #carousel div .carousel-inner .overlay .container .row div div .entrar:hover {
+            background-color: #ffffff;
+            color: #F67804;
+            border: 1px solid #F67804;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.9); }
+          @media (max-width: 400px) {
+            main #carousel div .carousel-inner .overlay .container .row div div .entrar {
+              justify-content: center;
+              align-items: center;
+              margin-left: auto;
+              margin-right: auto;
+              display: block; } }
+          @media screen and (max-width: 850px) and (min-width: 401px) {
+            main #carousel div .carousel-inner .overlay .container .row div div .entrar {
+              justify-content: center;
+              align-items: center;
+              margin-left: auto;
+              margin-right: auto;
+              display: block; } }
+        main #carousel div .carousel-inner .overlay .container .row div div #loadingMessage {
+          margin-top: 10px;
+          display: none; }
 
 #carousel .overlay .container,
 #carousel .overlay .row {
@@ -151,14 +203,20 @@ main #carousel {
   display: inline-block;
   min-height: 70vh;
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  /* pantalla grande */ }
+  @media screen and (max-width: 1050px) and (min-width: 851px) {
+    .contenedor_about_us .contenedor_principal {
+      display: block; } }
   .contenedor_about_us .contenedor_principal .contenedor_imagen {
     margin-top: 20vh;
     margin-left: 100px;
     width: 45%;
     margin-right: auto;
     display: block;
-    /*Responsive movil*/ }
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/
+    /* pantalla grande */ }
     @media (max-width: 400px) {
       .contenedor_about_us .contenedor_principal .contenedor_imagen {
         width: 70%;
@@ -166,9 +224,25 @@ main #carousel {
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      .contenedor_about_us .contenedor_principal .contenedor_imagen {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        width: 50%; } }
+    @media screen and (max-width: 1050px) and (min-width: 851px) {
+      .contenedor_about_us .contenedor_principal .contenedor_imagen {
+        width: 35%;
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center; } }
     .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
       width: 100%;
-      /*Responsive movil*/ }
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/
+      /* pantalla grande */ }
       @media (max-width: 400px) {
         .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
           justify-content: center;
@@ -178,20 +252,49 @@ main #carousel {
           display: block;
           width: 80%;
           margin-bottom: 30px; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block; } }
+      @media screen and (max-width: 1050px) and (min-width: 851px) {
+        .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+          width: 100%;
+          margin-top: 10vh;
+          margin-left: auto;
+          margin-right: auto; } }
   .contenedor_about_us .contenedor_principal .mision {
     margin-top: 20vh;
     margin-right: 10vh;
     margin-left: 20vh;
     font-size: 20px;
-    text-align: justify; }
+    text-align: justify;
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/
+    /* pantalla grande */ }
     @media (max-width: 400px) {
       .contenedor_about_us .contenedor_principal .mision {
         margin: 10px 30px 50px 30px;
         font-size: 16px; } }
-    @media (max-width: 400px) {
-      .contenedor_about_us .contenedor_principal .mision p {
-        font-size: 16px; } }
-    .contenedor_about_us .contenedor_principal .mision p .nuestra_mision {
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      .contenedor_about_us .contenedor_principal .mision {
+        margin: 25px 50px 50px 50px; } }
+    @media screen and (max-width: 1050px) and (min-width: 851px) {
+      .contenedor_about_us .contenedor_principal .mision {
+        width: 75%;
+        margin-top: 50px;
+        margin-bottom: 50px; } }
+    .contenedor_about_us .contenedor_principal .mision p {
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/ }
+      @media (max-width: 400px) {
+        .contenedor_about_us .contenedor_principal .mision p {
+          font-size: 16px; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        .contenedor_about_us .contenedor_principal .mision p {
+          font-size: 18px; } }
+    .contenedor_about_us .contenedor_principal .mision .nuestra_mision {
       color: #F67804;
       margin-bottom: 10px; }
 .contenedor_about_us strong {
@@ -273,13 +376,21 @@ main #carousel {
   margin-right: auto;
   margin-left: auto;
   width: 90%;
-  /*Responsive movil*/ }
+  /*Responsive movil*/
+  /*Responsive pantalla mediana*/ }
   @media (max-width: 400px) {
     .contenedor_productos .container-items {
       grid-template-columns: repeat(1, 1fr);
       width: 70%;
       margin-right: auto;
       margin-left: auto;
+      margin-top: 30px;
+      height: auto;
+      margin-bottom: 30px; } }
+  @media screen and (max-width: 850px) and (min-width: 401px) {
+    .contenedor_productos .container-items {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
       margin-top: 30px;
       height: auto;
       margin-bottom: 30px; } }
@@ -329,8 +440,16 @@ main #carousel {
   min-height: 80vh; }
   .contenedor_preguntas .contenedor_principal .questions-container {
     margin-top: 25px;
-    /*Responsive movil*/ }
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/
+    /* pantalla grande */ }
     @media (max-width: 400px) {
+      .contenedor_preguntas .contenedor_principal .questions-container {
+        margin: 50px 20px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      .contenedor_preguntas .contenedor_principal .questions-container {
+        margin: 50px 20px; } }
+    @media screen and (max-width: 1050px) and (min-width: 851px) {
       .contenedor_preguntas .contenedor_principal .questions-container {
         margin: 50px 20px; } }
     .contenedor_preguntas .contenedor_principal .questions-container h2 {
@@ -357,9 +476,10 @@ main #carousel {
 footer {
   display: flex;
   justify-content: space-between;
-  height: 30vh;
+  height: 35vh;
   background-color: #000000;
-  /*Responsive movil*/ }
+  /*Responsive movil*/
+  /*Responsive pantalla mediana*/ }
   @media (max-width: 400px) {
     footer {
       display: flex;
@@ -369,34 +489,64 @@ footer {
       padding-top: 50px;
       height: 60vh;
       margin-top: 0; } }
+  @media screen and (max-width: 850px) and (min-width: 401px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-top: 50px;
+      height: 60vh; } }
   footer .contacto {
     display: block;
     margin-top: 5vh;
-    /*Responsive movil*/ }
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/ }
     @media (max-width: 400px) {
       footer .contacto {
         margin-bottom: 30px;
         padding-top: 50px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      footer .contacto {
+        margin-bottom: 25px;
+        padding-top: 5vh; } }
+    footer .contacto div p {
+      padding-bottom: 10px; }
     footer .contacto .telefonos {
       margin-top: 15px; }
       footer .contacto .telefonos p {
-        margin-bottom: 4px;
-        /*Responsive movil*/ }
+        margin-bottom: 2px;
+        /*Responsive movil*/
+        /*Responsive pantalla mediana*/ }
         @media (max-width: 400px) {
           footer .contacto .telefonos p {
             font-size: 14px; } }
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+          footer .contacto .telefonos p {
+            font-size: 14px;
+            padding-bottom: 2px; } }
   footer .copyright {
     margin-top: 17vh;
-    /*Responsive movil*/ }
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/ }
     @media (max-width: 400px) {
       footer .copyright {
         margin-bottom: 30px;
         padding-top: 25px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      footer .copyright {
+        padding-top: 20px;
+        padding-bottom: 15px; } }
   footer .siguenos {
     display: block;
     margin-top: 5vh;
-    /*Responsive movil*/ }
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/ }
     @media (max-width: 400px) {
+      footer .siguenos {
+        margin-bottom: 50px;
+        padding-bottom: 50px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
       footer .siguenos {
         margin-bottom: 50px;
         padding-bottom: 50px; } }
@@ -407,11 +557,21 @@ footer {
       margin-top: 35px; }
       footer .siguenos div i:hover {
         color: #F67804; }
-  @media (max-width: 400px) {
-    footer .contacto,
-    footer .copyright,
-    footer .siguenos p {
-      margin-top: -20px; } }
+  footer .contacto,
+  footer .copyright,
+  footer .siguenos p {
+    /*Responsive movil*/
+    /*Responsive pantalla mediana*/ }
+    @media (max-width: 400px) {
+      footer .contacto,
+      footer .copyright,
+      footer .siguenos p {
+        margin-top: -20px; } }
+    @media screen and (max-width: 850px) and (min-width: 401px) {
+      footer .contacto,
+      footer .copyright,
+      footer .siguenos p {
+        margin-top: -20px; } }
 
 footer div {
   margin: auto;

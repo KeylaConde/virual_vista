@@ -16,6 +16,16 @@
                 margin: 50px 20px;
             }
 
+            /*Responsive pantalla mediana*/
+            @media screen and (max-width: 850px) and (min-width: 401px) {
+                margin: 50px 20px;
+            }
+
+            /* pantalla grande */
+            @media screen and (max-width: 1050px) and (min-width: 851px) {
+                margin: 50px 20px;
+            }
+
             h2 {
                 margin-bottom: 25px;
                 margin-left: 20px;
