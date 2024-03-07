@@ -2,6 +2,7 @@
 
 header {
     background: transparent;
+
     .head {
         height: 61px;
         background-color: transparent;
@@ -18,6 +19,7 @@ header {
                 display: flex;
                 cursor: pointer;
                 width: 30px;
+                margin-left: -10px;
             }
 
             /*Responsive pantalla mediana*/
@@ -40,6 +42,21 @@ header {
                         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
                         margin: 10px;
                         cursor: pointer;
+
+                        /*Responsive movil*/
+                        @media (max-width: 400px) {
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 50px;
+                        }
+
+                        /*Responsive pantalla mediana*/
+                        @media screen and (max-width: 850px) and (min-width: 401px) {
+                            justify-content: center;
+                            align-items: center;
+                            margin-left: 30px;
+                        }
+                        
                     }
                 }
 
@@ -72,17 +89,34 @@ header {
                         }
                     }
                 }
-                .navbar-shopping-cart {
-                    position: relative;
-                    img {
 
-                    }
-                }
             }
 
-
-
         }
+
+        ul {
+            .navbar-shopping-cart {
+                position: relative;
+                list-style: none;
+                padding-top: 10px;
+                cursor: pointer;
+
+                /*Responsive movil*/
+                @media (max-width: 400px) {
+                    margin-right: -16px;
+                }
+
+                /*Responsive pantalla mediana*/
+                @media screen and (max-width: 850px) and (min-width: 401px) {
+                    margin-right: -8px;
+                }
+                
+                img {
+                    
+                }
+            }
+        
+    }
     }
     .navbar-left ul,
     .navbar-right ul {

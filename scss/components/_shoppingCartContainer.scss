@@ -1,0 +1,130 @@
+@import '../base/variables';
+
+/*Estilos Carrito de Compras */
+
+#shoppingCartContainer {
+    width: 360px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    background-color: $white;
+    padding: 20px 24px;
+    border-radius: 10px;
+    z-index: 1000;
+
+    /*Responsive movil*/
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+
+    .title-container {
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+
+        .flecha {
+            transform: rotate(180deg);
+            margin-right: 14px;
+            cursor: pointer;
+        }
+        .title {
+
+        }
+    }
+    .my-order-content {
+
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+
+            figure {
+                margin: 0;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 20px;
+                    object-fit: cover;
+
+                }
+            }
+            p {
+                &:nth-child(2) {
+                    color: $gray;
+                }
+                &:nth-child(3) {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+            }
+            img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+            }
+        }
+
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 16px;
+            align-items: center;
+            background-color: $orange;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+
+            p {
+                display: flex;
+                flex-direction: column;
+
+                &:nth-child(1) {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+
+                &:nth-child(2) {
+                    text-align: end;
+                    font-weight: bold;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
+
+                }
+            }
+            p {
+                text-align: end;
+                font-weight: bold;
+                color: $black;
+                padding-top: 12px;
+            }
+
+        }
+
+        .primary-button {
+            background-color: $orange;
+            border-radius: 8px;
+            border: none;
+            color: $black;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            height: 50px;
+
+            &:hover {
+                background-color: $darkOrange;
+                color: $white;
+            }
+
+        }
+    }
+
+}

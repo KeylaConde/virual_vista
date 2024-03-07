@@ -591,7 +591,6 @@ strong {
 }
 
 /*Responsive pantalla mediana*/
-
 @media screen and (max-width: 850px) and (min-width: 401px) {
     .menu {
         display: flex;

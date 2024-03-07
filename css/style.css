@@ -25,7 +25,8 @@ header {
         header .head .menu {
           display: flex;
           cursor: pointer;
-          width: 30px; } }
+          width: 30px;
+          margin-left: -10px; } }
       @media screen and (max-width: 850px) and (min-width: 401px) {
         header .head .menu {
           display: flex;
@@ -39,7 +40,19 @@ header {
         border-radius: 20%;
         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
         margin: 10px;
-        cursor: pointer; }
+        cursor: pointer;
+        /*Responsive movil*/
+        /*Responsive pantalla mediana*/ }
+        @media (max-width: 400px) {
+          header .head .navbar-left a .logo_virtual_vista_orange {
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px; } }
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+          header .head .navbar-left a .logo_virtual_vista_orange {
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px; } }
     header .head .navbar-right {
       position: relative;
       cursor: pointer;
@@ -56,8 +69,19 @@ header {
         header .head .navbar-right ul li a:hover {
           color: #F67804;
           font-weight: 500; }
-        header .head .navbar-right ul .navbar-shopping-cart {
-          position: relative; }
+    header .head ul .navbar-shopping-cart {
+      position: relative;
+      list-style: none;
+      padding-top: 10px;
+      cursor: pointer;
+      /*Responsive movil*/
+      /*Responsive pantalla mediana*/ }
+      @media (max-width: 400px) {
+        header .head ul .navbar-shopping-cart {
+          margin-right: -16px; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        header .head ul .navbar-shopping-cart {
+          margin-right: -8px; } }
   header .navbar-left ul,
   header .navbar-right ul {
     list-style: none;
@@ -109,6 +133,88 @@ header {
         font-weight: bold; }
         .mobile-menu ul li a:hover {
           color: #F67804; }
+
+/*Estilos Carrito de Compras */
+#shoppingCartContainer {
+  width: 360px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  z-index: 1000;
+  /*Responsive movil*/ }
+  @media (max-width: 400px) {
+    #shoppingCartContainer {
+      width: 100%; } }
+  #shoppingCartContainer .title-container {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold; }
+    #shoppingCartContainer .title-container .flecha {
+      transform: rotate(180deg);
+      margin-right: 14px;
+      cursor: pointer; }
+  #shoppingCartContainer .my-order-content .shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center; }
+    #shoppingCartContainer .my-order-content .shopping-cart figure {
+      margin: 0; }
+      #shoppingCartContainer .my-order-content .shopping-cart figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover; }
+    #shoppingCartContainer .my-order-content .shopping-cart p:nth-child(2) {
+      color: #c7c7c7; }
+    #shoppingCartContainer .my-order-content .shopping-cart p:nth-child(3) {
+      font-size: 16px;
+      font-weight: bold; }
+    #shoppingCartContainer .my-order-content .shopping-cart img:hover {
+      cursor: pointer; }
+  #shoppingCartContainer .my-order-content .order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: #F67804;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px; }
+    #shoppingCartContainer .my-order-content .order p {
+      display: flex;
+      flex-direction: column; }
+      #shoppingCartContainer .my-order-content .order p:nth-child(1) {
+        font-size: 16px;
+        font-weight: bold; }
+      #shoppingCartContainer .my-order-content .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold; }
+      #shoppingCartContainer .my-order-content .order p span {
+        font-size: 16px;
+        font-weight: bold; }
+    #shoppingCartContainer .my-order-content .order p {
+      text-align: end;
+      font-weight: bold;
+      color: #000000;
+      padding-top: 12px; }
+  #shoppingCartContainer .my-order-content .primary-button {
+    background-color: #F67804;
+    border-radius: 8px;
+    border: none;
+    color: #000000;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px; }
+    #shoppingCartContainer .my-order-content .primary-button:hover {
+      background-color: #f65104;
+      color: #ffffff; }
 
 main {
   /*Responsive pantalla mediana*/ }
