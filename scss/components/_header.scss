@@ -45,9 +45,10 @@ header {
 
                         /*Responsive movil*/
                         @media (max-width: 400px) {
-                            justify-content: center;
+                            /*justify-content: center;
                             align-items: center;
-                            margin-left: 50px;
+                            margin-left: 50px;*/
+                            display: none;
                         }
 
                         /*Responsive pantalla mediana*/

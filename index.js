@@ -3,7 +3,7 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const enter = document.querySelector('.entrar');
 const loadingMessage = document.getElementById('loadingMessage');
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
-const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
+const shoppingCartContainer = document.querySelector('.shoppingCartContainer');
 const iconFlecha = document.querySelector('.flecha');
 
 menu.addEventListener('click', toggleMobileMenu);

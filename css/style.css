@@ -45,9 +45,10 @@ header {
         /*Responsive pantalla mediana*/ }
         @media (max-width: 400px) {
           header .head .navbar-left a .logo_virtual_vista_orange {
-            justify-content: center;
+            /*justify-content: center;
             align-items: center;
-            margin-left: 50px; } }
+            margin-left: 50px;*/
+            display: none; } }
         @media screen and (max-width: 850px) and (min-width: 401px) {
           header .head .navbar-left a .logo_virtual_vista_orange {
             justify-content: center;
@@ -135,7 +136,7 @@ header {
           color: #F67804; }
 
 /*Estilos Carrito de Compras */
-#shoppingCartContainer {
+.shoppingCartContainer {
   width: 360px;
   box-sizing: border-box;
   position: absolute;
@@ -146,37 +147,37 @@ header {
   z-index: 1000;
   /*Responsive movil*/ }
   @media (max-width: 400px) {
-    #shoppingCartContainer {
+    .shoppingCartContainer {
       width: 100%; } }
-  #shoppingCartContainer .title-container {
+  .shoppingCartContainer .title-container {
     display: flex;
     font-size: 20px;
     font-weight: bold; }
-    #shoppingCartContainer .title-container .flecha {
+    .shoppingCartContainer .title-container .flecha {
       transform: rotate(180deg);
       margin-right: 14px;
       cursor: pointer; }
-  #shoppingCartContainer .my-order-content .shopping-cart {
+  .shoppingCartContainer .my-order-content .shopping-cart {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
     margin-bottom: 24px;
     align-items: center; }
-    #shoppingCartContainer .my-order-content .shopping-cart figure {
+    .shoppingCartContainer .my-order-content .shopping-cart figure {
       margin: 0; }
-      #shoppingCartContainer .my-order-content .shopping-cart figure img {
+      .shoppingCartContainer .my-order-content .shopping-cart figure img {
         width: 70px;
         height: 70px;
         border-radius: 20px;
         object-fit: cover; }
-    #shoppingCartContainer .my-order-content .shopping-cart p:nth-child(2) {
+    .shoppingCartContainer .my-order-content .shopping-cart p:nth-child(2) {
       color: #c7c7c7; }
-    #shoppingCartContainer .my-order-content .shopping-cart p:nth-child(3) {
+    .shoppingCartContainer .my-order-content .shopping-cart p:nth-child(3) {
       font-size: 16px;
       font-weight: bold; }
-    #shoppingCartContainer .my-order-content .shopping-cart img:hover {
+    .shoppingCartContainer .my-order-content .shopping-cart img:hover {
       cursor: pointer; }
-  #shoppingCartContainer .my-order-content .order {
+  .shoppingCartContainer .my-order-content .order {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 16px;
@@ -185,24 +186,24 @@ header {
     margin-bottom: 24px;
     border-radius: 8px;
     padding: 0 24px; }
-    #shoppingCartContainer .my-order-content .order p {
+    .shoppingCartContainer .my-order-content .order p {
       display: flex;
       flex-direction: column; }
-      #shoppingCartContainer .my-order-content .order p:nth-child(1) {
+      .shoppingCartContainer .my-order-content .order p:nth-child(1) {
         font-size: 16px;
         font-weight: bold; }
-      #shoppingCartContainer .my-order-content .order p:nth-child(2) {
+      .shoppingCartContainer .my-order-content .order p:nth-child(2) {
         text-align: end;
         font-weight: bold; }
-      #shoppingCartContainer .my-order-content .order p span {
+      .shoppingCartContainer .my-order-content .order p span {
         font-size: 16px;
         font-weight: bold; }
-    #shoppingCartContainer .my-order-content .order p {
+    .shoppingCartContainer .my-order-content .order p {
       text-align: end;
       font-weight: bold;
       color: #000000;
       padding-top: 12px; }
-  #shoppingCartContainer .my-order-content .primary-button {
+  .shoppingCartContainer .my-order-content .primary-button {
     background-color: #F67804;
     border-radius: 8px;
     border: none;
@@ -212,7 +213,7 @@ header {
     font-size: 16px;
     font-weight: bold;
     height: 50px; }
-    #shoppingCartContainer .my-order-content .primary-button:hover {
+    .shoppingCartContainer .my-order-content .primary-button:hover {
       background-color: #f65104;
       color: #ffffff; }
 
@@ -305,110 +306,113 @@ main {
   height: 100%; }
 
 /* Estilos About Us*/
-.contenedor_about_us .contenedor_principal {
-  display: inline-block;
-  min-height: 70vh;
-  width: 100%;
-  padding: 0;
-  /* pantalla grande */ }
-  @media screen and (max-width: 1050px) and (min-width: 851px) {
-    .contenedor_about_us .contenedor_principal {
-      display: block; } }
-  .contenedor_about_us .contenedor_principal .contenedor_imagen {
-    margin-top: 20vh;
-    margin-left: 100px;
-    width: 45%;
-    margin-right: auto;
-    display: block;
-    /*Responsive movil*/
-    /*Responsive pantalla mediana*/
+.contenedor_about_us {
+  display: inline-flex;
+  min-height: 80vh; }
+  .contenedor_about_us .contenedor_principal {
+    display: flex;
+    min-height: 70vh;
+    width: 100%;
+    padding: 0;
     /* pantalla grande */ }
-    @media (max-width: 400px) {
-      .contenedor_about_us .contenedor_principal .contenedor_imagen {
-        width: 70%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px; } }
-    @media screen and (max-width: 850px) and (min-width: 401px) {
-      .contenedor_about_us .contenedor_principal .contenedor_imagen {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px;
-        width: 50%; } }
     @media screen and (max-width: 1050px) and (min-width: 851px) {
-      .contenedor_about_us .contenedor_principal .contenedor_imagen {
-        width: 35%;
-        display: block;
-        margin: auto;
-        padding-left: 10px;
-        justify-content: center;
-        align-items: center; } }
-    .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
-      width: 100%;
+      .contenedor_about_us .contenedor_principal {
+        display: flex; } }
+    .contenedor_about_us .contenedor_principal .contenedor_imagen {
+      margin-top: 20vh;
+      margin-left: 100px;
+      width: 45%;
+      margin-right: auto;
+      display: block;
       /*Responsive movil*/
       /*Responsive pantalla mediana*/
       /* pantalla grande */ }
       @media (max-width: 400px) {
-        .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
-          justify-content: center;
-          align-items: center;
-          margin-left: auto;
-          margin-right: auto;
+        .contenedor_about_us .contenedor_principal .contenedor_imagen {
+          width: 70%;
           display: block;
-          width: 80%;
-          margin-bottom: 30px; } }
-      @media screen and (max-width: 850px) and (min-width: 401px) {
-        .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
-          width: 90%;
           margin-left: auto;
           margin-right: auto;
-          display: block; } }
-      @media screen and (max-width: 1050px) and (min-width: 851px) {
-        .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
-          width: 100%;
-          margin-top: 10vh;
+          margin-top: 30px; } }
+      @media screen and (max-width: 850px) and (min-width: 401px) {
+        .contenedor_about_us .contenedor_principal .contenedor_imagen {
           margin-left: auto;
-          margin-right: auto; } }
-  .contenedor_about_us .contenedor_principal .mision {
-    margin-top: 20vh;
-    margin-right: 10vh;
-    margin-left: 20vh;
-    font-size: 20px;
-    text-align: justify;
-    /*Responsive movil*/
-    /*Responsive pantalla mediana*/
-    /* pantalla grande */ }
-    @media (max-width: 400px) {
-      .contenedor_about_us .contenedor_principal .mision {
-        margin: 10px 30px 50px 30px;
-        font-size: 16px; } }
-    @media screen and (max-width: 850px) and (min-width: 401px) {
-      .contenedor_about_us .contenedor_principal .mision {
-        margin: 25px 50px 50px 50px; } }
-    @media screen and (max-width: 1050px) and (min-width: 851px) {
-      .contenedor_about_us .contenedor_principal .mision {
-        width: 75%;
-        margin-top: 50px;
-        margin-bottom: 50px; } }
-    .contenedor_about_us .contenedor_principal .mision p {
+          margin-right: auto;
+          margin-top: 25px;
+          width: 50%; } }
+      @media screen and (max-width: 1050px) and (min-width: 851px) {
+        .contenedor_about_us .contenedor_principal .contenedor_imagen {
+          width: 35%;
+          display: block;
+          margin: auto;
+          padding-left: 10px;
+          justify-content: center;
+          align-items: center; } }
+      .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+        width: 100%;
+        /*Responsive movil*/
+        /*Responsive pantalla mediana*/
+        /* pantalla grande */ }
+        @media (max-width: 400px) {
+          .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 80%;
+            margin-bottom: 30px; } }
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+          .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block; } }
+        @media screen and (max-width: 1050px) and (min-width: 851px) {
+          .contenedor_about_us .contenedor_principal .contenedor_imagen .cliente_feliz {
+            width: 100%;
+            margin-top: 10vh;
+            margin-left: auto;
+            margin-right: auto; } }
+    .contenedor_about_us .contenedor_principal .mision {
+      margin-top: 20vh;
+      margin-right: 10vh;
+      margin-left: 20vh;
+      font-size: 20px;
+      text-align: justify;
       /*Responsive movil*/
-      /*Responsive pantalla mediana*/ }
+      /*Responsive pantalla mediana*/
+      /* pantalla grande */ }
       @media (max-width: 400px) {
-        .contenedor_about_us .contenedor_principal .mision p {
+        .contenedor_about_us .contenedor_principal .mision {
+          margin: 10px 30px 50px 30px;
           font-size: 16px; } }
       @media screen and (max-width: 850px) and (min-width: 401px) {
-        .contenedor_about_us .contenedor_principal .mision p {
-          font-size: 18px; } }
-    .contenedor_about_us .contenedor_principal .mision .nuestra_mision {
-      color: #F67804;
-      margin-bottom: 10px; }
-.contenedor_about_us strong {
-  color: #F67804;
-  font-size: 20px; }
-  @media (max-width: 400px) {
-    .contenedor_about_us strong {
-      font-size: 16px; } }
+        .contenedor_about_us .contenedor_principal .mision {
+          margin: 25px 50px 50px 50px; } }
+      @media screen and (max-width: 1050px) and (min-width: 851px) {
+        .contenedor_about_us .contenedor_principal .mision {
+          width: 75%;
+          margin-top: 50px;
+          margin-bottom: 50px; } }
+      .contenedor_about_us .contenedor_principal .mision p {
+        /*Responsive movil*/
+        /*Responsive pantalla mediana*/ }
+        @media (max-width: 400px) {
+          .contenedor_about_us .contenedor_principal .mision p {
+            font-size: 16px; } }
+        @media screen and (max-width: 850px) and (min-width: 401px) {
+          .contenedor_about_us .contenedor_principal .mision p {
+            font-size: 18px; } }
+      .contenedor_about_us .contenedor_principal .mision .nuestra_mision {
+        color: #F67804;
+        margin-bottom: 10px; }
+  .contenedor_about_us strong {
+    color: #F67804;
+    font-size: 20px; }
+    @media (max-width: 400px) {
+      .contenedor_about_us strong {
+        font-size: 16px; } }
 
 /* Estilos Registro*/
 .contenedor_formulario .contenedor_principal {
@@ -592,8 +596,8 @@ footer {
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      padding-top: 50px;
-      height: 60vh;
+      padding-top: 6vh;
+      height: 70vh;
       margin-top: 0; } }
   @media screen and (max-width: 850px) and (min-width: 401px) {
     footer {

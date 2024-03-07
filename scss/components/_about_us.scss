@@ -2,16 +2,18 @@
 /* Estilos About Us*/
 
 .contenedor_about_us {
+    display: inline-flex;
+    min-height: 80vh;
 
     .contenedor_principal {
-        display:inline-block;
+        display: flex;
         min-height: 70vh;
         width: 100%;
         padding: 0;
 
         /* pantalla grande */
         @media screen and (max-width: 1050px) and (min-width: 851px) {
-            display: block;
+            display: flex;
         }
 
         .contenedor_imagen {
