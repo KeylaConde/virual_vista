@@ -314,7 +314,11 @@ main {
     min-height: 70vh;
     width: 100%;
     padding: 0;
+    /*Responsive movil*/
     /* pantalla grande */ }
+    @media (max-width: 400px) {
+      .contenedor_about_us .contenedor_principal {
+        display: block; } }
     @media screen and (max-width: 1050px) and (min-width: 851px) {
       .contenedor_about_us .contenedor_principal {
         display: flex; } }

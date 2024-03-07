@@ -11,6 +11,11 @@
         width: 100%;
         padding: 0;
 
+                    /*Responsive movil*/
+                    @media (max-width: 400px) {
+                        display: block;
+                    }
+
         /* pantalla grande */
         @media screen and (max-width: 1050px) and (min-width: 851px) {
             display: flex;
